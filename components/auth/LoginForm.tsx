@@ -9,11 +9,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { createClient } from "@/lib/supabase/client"
 import { handleDemoLogin } from "@/lib/demo-auth"
-import { useToast } from "@/hooks/use-toast"
 
 export function LoginForm() {
   const router = useRouter()
-  const { toast } = useToast()
   const [loading, setLoading] = useState(false)
   const [demoLoading, setDemoLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)

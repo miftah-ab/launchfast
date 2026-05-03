@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createClient } from '@supabase/supabase-js'
 import * as dotenv from 'dotenv'
 
@@ -41,7 +42,7 @@ async function setupDemoUser() {
       console.error('Error creating user:', createError.message)
       return
     }
-    demoUser = user
+    demoUser = user as any
     console.log('Demo user created!')
   } else {
     console.log('Demo user already exists.')

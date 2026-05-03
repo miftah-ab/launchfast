@@ -57,13 +57,8 @@ export function SignupForm() {
     router.push("/verify-email")
   }
 
-  const handleGoogle = async () => {
-    const supabase = createClient()
-    await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: { redirectTo: `${window.location.origin}/dashboard` },
-    })
-  }
+  // Coming soon: Google OAuth flow
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-950 dark:to-blue-950/20 px-4 py-12">
