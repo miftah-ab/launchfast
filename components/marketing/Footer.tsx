@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Zap } from "lucide-react"
 
 const footerLinks = [
@@ -16,8 +17,8 @@ export function Footer() {
           {/* Logo + tagline */}
           <div className="flex flex-col items-center md:items-start gap-3">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center transition-transform group-hover:scale-105">
-                <Zap className="w-4 h-4 text-background fill-background" />
+              <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center transition-transform group-hover:scale-105 overflow-hidden relative">
+                <Image src="/logo.png" alt="LaunchFast Logo" fill className="object-cover" />
               </div>
               <span className="text-lg font-bold tracking-tight text-foreground">LaunchFast</span>
             </Link>

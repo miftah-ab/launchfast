@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useSearchParams } from "next/navigation"
 import { Mail, RefreshCw, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -42,8 +43,8 @@ function VerifyEmailContent() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-950 dark:to-blue-950/20 px-4">
       <div className="w-full max-w-md text-center">
         <Link href="/" className="inline-flex items-center gap-2 mb-8">
-          <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
-            <Zap className="w-5 h-5 text-white" />
+          <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden relative">
+            <Image src="/logo.png" alt="LaunchFast Logo" fill className="object-cover" />
           </div>
           <span className="text-xl font-bold">LaunchFast</span>
         </Link>
@@ -90,7 +91,9 @@ export default function VerifyEmailPage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen flex items-center justify-center">
-        <Zap className="w-8 h-8 text-blue-600 animate-pulse" />
+        <div className="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden relative animate-pulse">
+          <Image src="/logo.png" alt="Loading..." fill className="object-cover" />
+        </div>
       </div>
     }>
       <VerifyEmailContent />

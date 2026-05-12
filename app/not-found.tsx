@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Home, ArrowLeft, Zap } from "lucide-react"
 
@@ -12,8 +13,8 @@ export default function NotFound() {
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="absolute inset-0 bg-blue-500 blur-2xl opacity-20 animate-pulse rounded-full" />
-            <div className="relative w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-600/20 rotate-12 hover:rotate-0 transition-transform duration-500">
-              <Zap className="w-10 h-10 text-white" />
+            <div className="relative w-20 h-20 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-600/20 rotate-12 hover:rotate-0 transition-transform duration-500 overflow-hidden">
+              <Image src="/logo.png" alt="LaunchFast Logo" fill className="object-cover" />
             </div>
           </div>
         </div>

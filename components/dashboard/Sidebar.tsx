@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import {
   LayoutDashboard,
@@ -81,8 +82,8 @@ export function Sidebar({ user }: SidebarProps) {
       {/* Logo */}
       <div className="p-6">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center transition-transform group-hover:scale-105">
-            <Zap className="w-4 h-4 text-background fill-background" />
+          <div className="w-8 h-8 bg-foreground rounded flex items-center justify-center transition-transform group-hover:scale-105 overflow-hidden relative">
+            <Image src="/logo.png" alt="LaunchFast Logo" fill className="object-cover" />
           </div>
           <span className="text-lg font-bold tracking-tight">LaunchFast</span>
         </Link>
@@ -173,8 +174,8 @@ export function Sidebar({ user }: SidebarProps) {
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-4 h-14 bg-[#0A0A0A] border-b border-[rgba(255,255,255,0.06)]">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-[#F0EDE6] rounded flex items-center justify-center">
-            <Zap className="w-4 h-4 text-black fill-black" />
+          <div className="w-7 h-7 bg-[#F0EDE6] rounded flex items-center justify-center overflow-hidden relative">
+            <Image src="/logo.png" alt="LaunchFast Logo" fill className="object-cover" />
           </div>
           <span className="font-bold text-sm tracking-tight text-[#F0EDE6]">LaunchFast</span>
         </Link>
