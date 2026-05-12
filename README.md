@@ -13,8 +13,14 @@
 > Or use: `demo@launchfast.com` / `demo123456`
 > Live Demo URL: [https://launchfast-saas.vercel.app](https://launchfast-saas.vercel.app)
 
-![LaunchFast Dashboard](./public/screenshot.png)
-*Note: Dashboard preview showcasing stats, activity feed, and responsive sidebar.*
+![Landing Page](./public/screenshots/LaunchFast%20AI%20SaaS%20Starter%20Kit%20Website%20Landing%20Page.png)
+*Note: The highly converting Landing Page built for modern SaaS products.*
+
+![Dashboard Interface](./public/screenshots/LaunchFast%20Analytics%20Dashboard%20Interface.png)
+*Note: A clean, user-friendly Dashboard for managing tasks and user settings.*
+
+![System Metrics](./public/screenshots/LaunchFast%20Dashboard%20Overview%20showing%20Analytics%20and%20System%20Metrics.png)
+*Note: Comprehensive system overview with AI usage analytics and user growth tracking.*
 
 ## Features: 
 - ✅ **Authentication** : signup, login, email verification, password reset
