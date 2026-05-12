@@ -160,8 +160,8 @@ Open [https://launchfast-saas.vercel.app](https://launchfast-saas.vercel.app) in
 
 | Branch | Purpose | Environment |
 |---|---|---|
-| `main` | Production — live site | Stripe live keys |
-| `dev` | Development — preview | Stripe test keys |
+| `main` | Production - live site | Stripe live keys |
+| `dev` | Development - preview | Stripe test keys |
 
 All development happens on the `dev` branch. Merge to `main` only when ready to go live.
 
@@ -178,4 +178,4 @@ All development happens on the `dev` branch. Merge to `main` only when ready to 
 - [ ] Email notifications
 
 ## License
-MIT License — feel free to use this as a starting point for your own SaaS.
+MIT License - feel free to use this as a starting point for your own SaaS.
